@@ -1,5 +1,32 @@
+.grid-item {
+	border: 5px solid black; 
+}
+
 #grid-container {
 display:  grid;
-grid-template-columns: 100px 100px 100px;
-grid-template-rows: 100px 100px 100px;
+grid-template-columns: 5em 5em 5em;
+grid-template-rows: 5em 5em 5em;
+grid-template-areas:  
+"header header header"
+"video form form"
+"video form form"; 
+border: 5px solid black; 
+
+} 
+
+#header {
+	display: grid;
+	grid-template-rows: auto;
+	margin:  auto;
+	padding:  auto;
+	width: auto;
+grid-area: header;
+}
+
+#nav-bar {
+
+}
+
+#video-container {
+grid-area: video;
 }
