@@ -1,32 +1,24 @@
-.grid-item {
-	border: 5px solid black; 
-}
-
 #grid-container {
-display:  grid;
-grid-template-columns: 5em 5em 5em;
-grid-template-rows: 5em 5em 5em;
-grid-template-areas:  
-"header header header"
-"video form form"
-"video form form"; 
-border: 5px solid black; 
-
-} 
-
-#header {
-	display: grid;
-	grid-template-rows: auto;
-	margin:  auto;
-	padding:  auto;
+	display:  grid;
+	height: 100vh; /* This sets the container height to the height of the viewport */
+	border: 5px solid black;
 	width: auto;
-grid-area: header;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 100px;
+	grid-template-areas: 
+	"header header header"
+	"video form form"
+	"video form form";
+	
 }
 
-#nav-bar {
-
+#header{
+	display: flex;
+	flex-direction: column;
+	background-color: lightblue;
+	grid-area: header; /* This allows for the header div 
+	to take up all the space on the top row. */
 }
 
-#video-container {
-grid-area: video;
-}
+
