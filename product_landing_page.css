@@ -16,6 +16,7 @@
 #header{
 	display: flex;
 	flex-direction: column;
+	position: relative; /* this is what allowed for me to position the child element at the bottom of this element */
 	background-color: lightblue;
 	grid-area: header; /* This allows for the header div 
 	to take up all the space on the top row. */
@@ -32,6 +33,9 @@
 
 #nav-bar {
 	background-color: lightcyan;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 
