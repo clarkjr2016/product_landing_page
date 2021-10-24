@@ -21,4 +21,17 @@
 	to take up all the space on the top row. */
 }
 
+#header-img {
+	width: 100px;
+	height:  100px;
+	position: absolute;
+	right: 30px;
+	top: 20px;
+	border-radius: 10px;
+}
+
+#nav-bar {
+	background-color: lightcyan;
+}
+
 
