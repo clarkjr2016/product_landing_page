@@ -5,7 +5,7 @@
 	width: auto;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
-	grid-gap: 100px;
+	grid-gap: 50px;
 	grid-template-areas: 
 	"header header header"
 	"video form form"
@@ -13,13 +13,14 @@
 	
 }
 
-#header{
+#header {
 	display: flex;
 	flex-direction: column;
 	position: relative; /* this is what allowed for me to position the child element at the bottom of this element */
 	background-color: lightblue;
 	grid-area: header; /* This allows for the header div 
 	to take up all the space on the top row. */
+	
 }
 
 #header-img {
@@ -32,10 +33,15 @@
 }
 
 #nav-bar {
+	display:flex;
+	justify-content: space-between;
 	background-color: lightcyan;
 	position: absolute;
 	bottom: 0;
+	height: 25px;
 	width: 100%;
+
+	
 }
 
 
