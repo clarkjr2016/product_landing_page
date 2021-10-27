@@ -15,16 +15,28 @@
 		<div id="header"> 
 		<p> Header </p>
 		<img src="logoplaceholder.jpg" alt="Place Holder Logo" id ="header-img">
-		<nav id="nav-bar"> <ul>
-			<li class="nav-link">Home</li>
-			<li class="nav-link">About</li>
-			<li class="nav-link">Contact</li>
+		<nav id="nav-bar"> 
+			<ul>
+			<a href="#header"><li class="nav-link">Header</li></a>
+			<a href="#header-img"> <li class="nav-link">Picture</li></a>
+			<a href ="#video"> <li class="nav-link">Video</li> </a>
 
 
-		</ul> </nav>
+		</ul> 
+	
+		</nav>
 		</div>
 
-		<div>Grid Item 2</div>	
+		<div id="video-container"> 
+
+			<h2 style="text-align:center">Video</h2>
+
+			<video id ="video" width="500px" height="50%" controls> <!-- This is how I embedded a video element into the "video" grid container-->
+				<source src="IMG_8751.mp4" type="video/mp4">
+			</video>
+
+
+		</div>	
 
 		<div> Grid Item 3 </div>
 
