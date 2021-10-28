@@ -10,6 +10,7 @@
 	"header header header"
 	"video form form"
 	"video form form";
+	background-color: cadetblue;
 	
 }
 
@@ -61,5 +62,4 @@ nav ul a {
 
 #video-container {
 grid-area: video;
-border: 5px solid black;
 }
