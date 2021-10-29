@@ -5,7 +5,7 @@
 	width: auto;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
-	grid-gap: 50px;
+	grid-gap: 1rem;
 	grid-template-areas: 
 	"header header header"
 	"video form form"
@@ -46,20 +46,35 @@
 	
 }
 
+a {
+	text-decoration: none; /* had to apply this to the anchor elements in order to remove the underline */
+	border-right: 1px solid black; /* had to apply this to the anchor elements in order to give it a line on the right side */
+}
 
-nav ul .nav-link {
-
-	display: inline;
-	list-style-type: none;
+li {
+	display: inline; 
 	margin: 50px;
-
+	
+	
 }
 
-nav ul a {
-	border-right: 1px solid black;
-	text-decoration: none;
-}
 
 #video-container {
 grid-area: video;
+}
+
+#form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	grid-area: form;
+	background-color: rgb(157, 225, 228);
+}
+
+@media screen and (max-width: 500px) {
+
+	body {
+		background-color: chocolate;
+	}
 }

@@ -17,12 +17,12 @@
 		<img src="logoplaceholder.jpg" alt="Place Holder Logo" id ="header-img">
 		<nav id="nav-bar"> 
 			<ul>
-			<a href="#header"><li class="nav-link">Header</li></a>
-			<a href="#header-img"> <li class="nav-link">Picture</li></a>
-			<a href ="#video"> <li class="nav-link">Video</li> </a>
+			<a href="#header" class="nav-link"><li >Header</li></a>   <!--I had to apply the class to the anchor tag instead of the list tag in order for this test to past the fcc test.-->
+			<a href="#form" class="nav-link"> <li>Picture</li></a>
+			<a href ="#video-container" class="nav-link"> <li>Video</li> </a>
 
 
-		</ul> 
+		</ul>  
 	
 		</nav>
 		</div>
@@ -38,7 +38,14 @@
 
 		</div>	
 
-		<div> Grid Item 3 </div>
+		<form id="form" action="https://www.freecodecamp.com/email-submit"> 
+			<div id="email-container">
+				<input type="email" placeholder="Email" id="email" name="email" required>
+				<input type="submit" id="submit" value="Submit">
+			</div>
+
+		
+		</form>
 
 	
 			
